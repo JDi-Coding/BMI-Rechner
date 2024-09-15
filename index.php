@@ -10,10 +10,26 @@
     <h1>BMI Rechner</h1>
 
     <label for="gewicht">Gewicht (in kg):</label>
-    <input type="number" id="gewicht" required><br><br>
+    <input type="number" id="gewicht" required>
 
-    <label for="groesse">Größe (in m):</label>
-    <input type="number" step="0.01" id="groesse" required><br><br>
+    <label for="groesse">Größe (in cm):</label>
+    <input type="number" step="0.01" id="groesse" required>
+
+    <label for="AktivitätsLevel">Aktivität:</label>
+    <Select id="aktivität" name="AktivitätsLevel" required>
+        <option Value="">Bitte Auswählen</option>
+        <option Value="1">Aktiv</option>
+        <option Value="2">Etwas Aktiv</option>
+        <option Value="3">Wenig Aktiv</option>
+        <option Value="4">Nicht Aktiv</option>
+    </Select>
+
+    <label for="JobArt">JobArt:</label>
+    <Select name="JobArt" id="jobart" required>
+        <option Value="">Bitte Auswählen</option>
+        <option Value="1">Handwerklich</option>
+        <option Value="2">Bürojob</option>
+    </Select>
 
     <button onclick="calculateBMI()">Berechne BMI</button>
 
