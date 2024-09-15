@@ -5,7 +5,7 @@ function calculateBMI() {
 
     // Erstellen eines AJAX-Anfrageobjekts
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "bmi_calculator.php", true);
+    xhr.open("POST", "./Backend/bmi_calculator.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     // Bei erfolgreicher Anfrage das Ergebnis anzeigen
